@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: #eee;
+    --secondary: #222;
+    --third: #C322F2;
+    --fourth: #932BEB;
+    --bg-primary: #111;
+    --bg-secondary: #000;
+}
+
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--primary);
+}
+
+body div.bg-calculator {
+    padding: 25px;
+    box-shadow: 7px 7px 4px var(--bg-secondary);
+    background-color: var(--bg-primary);
+    width: 500px;
+}
+
+@media screen and (max-width: 545px) {
+    body {
+        background-color: var(--bg-primary);
+    }
+    body div.bg-calculator {
+        margin-top: 40px;
+        height: 100vh;
+        box-shadow: 7px 7px 4px var(--bg-primary);
+    }
+    body div.bg-calculator div.numbers-display a {
+        padding: 20px;
+    }
+}
+
+body div.bg-calculator span.text-calculator {
+    margin-right: 2px;
+    font-size: 20px;
+    color: var(--third);
+}
+
+body div.bg-calculator span.text-calculator:hover {
+    color: var(--fourth);
+}
+
+body div.bg-calculator div.calculator-display {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 5px 5px 2px var(--bg-secondary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body div.bg-calculator div.calculator-display p.small-text-display {
+    font-size: 20px;
+}
+
+body div.bg-calculator div.calculator-display p.large-text-display {
+    margin-top: 5px;
+    font-size: 70px;
+}
+
+body div.bg-calculator div.numbers-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+body div.bg-calculator div.numbers-display button {
+    border: none;
+    color: var(--primary);
+    font-size: 25px;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px var(--bg-secondary);
+}
+
+body div.bg-calculator div.numbers-display button.equal-btn {
+    color: var(--bg-secondary);
+    background-color: var(--third);
+}
+
+body div.bg-calculator div.numbers-display button.number-btn {
+    background-color: var(--secondary);
+}
+
+body div.bg-calculator div.numbers-display button:hover {
+    background-color: var(--secondary);
+}
+
+body div.bg-calculator div.numbers-display button.equal-btn:hover {
+    background-color: var(--fourth);
+}
+
+body div.bg-calculator div.numbers-display button.number-btn:hover {
+    background-color: var(--bg-secondary);
+}

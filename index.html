@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-calculator">
+        <span class="text-calculator"><b>Calculator</b></span><span> powered by Pedro Godoi</span>
+        <div class="calculator-display">
+            <p class="small-text-display"></p>
+            <p class="large-text-display"></p>
+        </div>
+        <div class="numbers-display">
+            <button class="number-btn" onclick="numberToDisplay(7)">7</button>
+            <button class="number-btn" onclick="numberToDisplay(8)">8</button>
+            <button class="number-btn" onclick="numberToDisplay(9)">9</button>
+            <button id="clear" onclick="clearNumberAll()">C</button>
+            <button id="clear-entry" onclick="clearNumber()">CE</button>
+            <button class="number-btn" onclick="numberToDisplay(4)">4</button>
+            <button class="number-btn" onclick="numberToDisplay(5)">5</button>
+            <button class="number-btn" onclick="numberToDisplay(6)">6</button>
+            <button id="">(</button>
+            <button id="">)</button>
+            <button class="number-btn" onclick="numberToDisplay(1)">1</button>
+            <button class="number-btn" onclick="numberToDisplay(2)">2</button>
+            <button class="number-btn" onclick="numberToDisplay(3)">3</button>
+            <button onclick="newOperation('/')">/</button>
+            <button onclick="newOperation('x')">x</button>
+            <button onclick="newOperation('.')">.</button>
+            <button class="number-btn" onclick="numberToDisplay(0)">0</button>
+            <button class="equal-btn" onclick="calculate()">=</button>
+            <button onclick="newOperation('+')">+</button>
+            <button onclick="newOperation('-')">-</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
