@@ -93,6 +93,12 @@ body div.bg-calculator div.numbers-display button {
     box-shadow: 3px 3px 2px var(--bg-secondary);
 }
 
+body div.bg-calculator div.numbers-display button.nothing-btn {
+    background-color: var(--bg-primary);
+    box-shadow: none;
+    cursor:auto;
+}
+
 body div.bg-calculator div.numbers-display button.equal-btn {
     color: var(--bg-secondary);
     background-color: var(--third);
@@ -102,7 +108,7 @@ body div.bg-calculator div.numbers-display button.number-btn {
     background-color: var(--secondary);
 }
 
-body div.bg-calculator div.numbers-display button:hover {
+body div.bg-calculator div.numbers-display button.number-btn,button.equal-btn:hover {
     background-color: var(--secondary);
 }
 
@@ -112,4 +118,10 @@ body div.bg-calculator div.numbers-display button.equal-btn:hover {
 
 body div.bg-calculator div.numbers-display button.number-btn:hover {
     background-color: var(--bg-secondary);
+}
+
+body div.bg-calculator div.observation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

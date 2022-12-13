@@ -41,13 +41,24 @@ function newOperation(symbol) {
     var number = smallDisplay.innerText.substring(0, len)
 
     var result = onScreen
-    if (number.length > 0) {
+    if(number.length > 0) {
         result = number
     } else {
         largeDisplay.innerHTML = null
     }
 
     smallDisplay.innerHTML = result + symbol
+}
+
+function dot() {
+    var onScreen = largeDisplay.innerText;
+    var dot = /[.]/g
+    var searchDot = onScreen.search(dot)
+    if(searchDot >= 0){
+        largeDisplay.innerText += ""
+    } else {
+        largeDisplay.innerText += "."
+    }
 }
 
 function calculate() {

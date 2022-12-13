@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculadora</title>
     <link href="/index.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.png">
 </head>
 <body>
     <div class="bg-calculator">
-        <span class="text-calculator"><b>Calculator</b></span><span> powered by Pedro Godoi</span>
+        <span class="text-calculator"><b>Calculadora</b></span><span> feito por Pedro Godoi</span>
         <div class="calculator-display">
             <p class="small-text-display"></p>
             <p class="large-text-display"></p>
@@ -23,18 +24,20 @@
             <button class="number-btn" onclick="numberToDisplay(4)">4</button>
             <button class="number-btn" onclick="numberToDisplay(5)">5</button>
             <button class="number-btn" onclick="numberToDisplay(6)">6</button>
-            <button id="">(</button>
-            <button id="">)</button>
+            <button onclick="newOperation('/')">/</button>
+            <button onclick="newOperation('x')">x</button>
             <button class="number-btn" onclick="numberToDisplay(1)">1</button>
             <button class="number-btn" onclick="numberToDisplay(2)">2</button>
             <button class="number-btn" onclick="numberToDisplay(3)">3</button>
-            <button onclick="newOperation('/')">/</button>
-            <button onclick="newOperation('x')">x</button>
-            <button onclick="newOperation('.')">.</button>
-            <button class="number-btn" onclick="numberToDisplay(0)">0</button>
-            <button class="equal-btn" onclick="calculate()">=</button>
             <button onclick="newOperation('+')">+</button>
             <button onclick="newOperation('-')">-</button>
+            <button class="nothing-btn"></button>
+            <button class="number-btn" onclick="numberToDisplay(0)">0</button>
+            <button onclick="dot()">.</button>
+            <button class="equal-btn" onclick="calculate()">=</button>
+        </div>
+        <div class="observation">
+            <p>Calcule números com no máximo 5 digitos.</p>
         </div>
     </div>
 </body>
